@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <!-- The title of the game -->
+  <h2>Lucky Seven Game</h2>
+
+  <!-- Instructions for the game -->
+  <p>Click on a button to reveal its hidden value. You must then click the button in the position corresponding to the
+    revealed number.
+    If you reveal a number corresponding to a button you've already clicked, you lose! If you can reveal all buttons,
+    you win!</p>
+
+  <!-- This div is where the game buttons will be dynamically added by the JavaScript -->
+  <div id="game-container"></div>
+
+  <!-- A place to display messages to the player -->
+  <p id="message"></p>
+
+  <!-- This button will restart the game when clicked -->
+  <button id="restart" onclick="restartGame()">Restart</button>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</body>
+
+</html>

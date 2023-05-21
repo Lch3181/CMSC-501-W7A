@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Dharma Day Spa</h2>
+    <p>Select your preferred service:</p>
+
+    <!-- Radio buttons for the services, now with the prices as values -->
+    <label>
+        <input type="radio" id="manicure" name="service" value="15"> Manicure
+    </label><br>
+    <label>
+        <input type="radio" id="pedicure" name="service" value="30"> Pedicure
+    </label><br>
+    <label>
+        <input type="radio" id="both" name="service" value="38"> Both
+    </label><br>
+
+    <button id="select-button" onclick="displayPrice()">Select</button>
+    <p id="price-display"></p>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</body>
+
+</html>

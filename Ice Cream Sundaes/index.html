@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <!-- This is the header of the page -->
+  <h2>Yummy’s Ice Cream Sundaes Order Form</h2>
+
+  <!-- This is the form where users will input their ice cream preferences -->
+  <form id="ice-cream-form">
+
+    <!-- This section lets users choose the number of scoops -->
+    <label for="scoops">Choose a scoop:</label>
+    <select id="scoops" name="scoops">
+      <option value="4.50">One Scoop</option>
+      <option value="8.00">Two Scoops</option>
+      <option value="11.00">Three Scoops</option>
+    </select><br><br>
+
+    <!-- This section lets users choose their ice cream flavor -->
+    <label for="flavors">Choose a flavor:</label>
+    <select id="flavors" name="flavors">
+      <option value="vanilla">Vanilla</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="strawberry">Strawberry</option>
+    </select><br><br>
+
+    <!-- This section lets users add toppings -->
+    <label for="toppings">Add Toppings:</label><br>
+    <input type="checkbox" id="nuts" name="topping" value="0.75">
+    <label for="nuts">Nuts</label><br>
+    <input type="checkbox" id="cream" name="topping" value="0.75">
+    <label for="cream">Whipped Cream</label><br>
+    <input type="checkbox" id="cherries" name="topping" value="0.75">
+    <label for="cherries">Cherries</label><br><br>
+
+    <!-- This is the submit button which, when clicked, will calculate the order total -->
+    <input type="button" value="Submit" onclick="calculateOrder()">
+  </form>
+
+  <!-- This is where the result (total cost) will be displayed -->
+  <p id="result"></p>
+
+  <!-- This links to the JavaScript file that contains the function to calculate the total -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
